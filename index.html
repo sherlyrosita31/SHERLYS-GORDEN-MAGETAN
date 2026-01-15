@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garestha Good Gorden - Transformasi Estetika Jendela</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pastel-pink: #FFF0F5;
+            --pastel-blue: #EBF4FF;
+            --pastel-yellow: #FFFBEB;
+            --pastel-green: #F0FFF4;
+            --soft-white: #FFFFFF;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--soft-white);
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #F472B6, #818CF8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+        }
+        .card-shadow {
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .card-shadow:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.1);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav px-6 md:px-12 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-gradient-to-tr from-pink-400 to-indigo-400 rounded-xl flex items-center justify-center text-white font-bold shadow-lg">G</div>
+            <span class="text-xl font-extrabold tracking-tight font-serif"><span class="text-pink-500">Garestha</span> <span class="text-indigo-500">Good</span></span>
+        </div>
+        <div class="hidden lg:flex space-x-8 font-bold text-xs uppercase tracking-widest text-slate-500">
+            <a href="#koleksi" class="hover:text-pink-500 transition">Koleksi</a>
+            <a href="#kain" class="hover:text-pink-500 transition">Material</a>
+            <a href="#sistem" class="hover:text-pink-500 transition">Sistem</a>
+            <a href="#harga" class="hover:text-pink-500 transition">Harga</a>
+        </div>
+        <a href="https://wa.me/6282337931876" class="bg-indigo-600 text-white px-6 py-3 rounded-full font-bold shadow-xl hover:bg-indigo-700 transition-all active:scale-95 text-sm">
+            Hubungi Kami
+        </a>
+    </nav>
+
+    <!-- Hero Section with Initial Image -->
+    <section class="relative pt-24 lg:pt-32 pb-16 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="lg:w-1/2 space-y-8 text-center lg:text-left z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-pink-50 text-pink-500 rounded-full text-[10px] font-bold tracking-[0.2em] uppercase mb-2">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+                    </span>
+                    Koleksi Terbaru 2026
+                </div>
+                <h1 class="text-5xl md:text-7xl font-serif leading-tight">Keindahan Gorden <br><span class="gradient-text">Tiada Banding</span></h1>
+                <p class="text-slate-500 text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    Garestha Good Gorden bukan sekadar penutup jendela. Kami adalah sentuhan akhir yang mengubah rumah Anda menjadi istana kenyamanan.
+                </p>
+                <div class="flex flex-wrap gap-5 justify-center lg:justify-start pt-4">
+                    <a href="#harga" class="bg-pink-400 text-white px-10 py-5 rounded-2xl shadow-2xl hover:bg-pink-500 transition-all font-extrabold text-lg hover:-translate-y-1">Lihat Penawaran Harga</a>
+                    <a href="#koleksi" class="bg-white text-indigo-500 border-2 border-indigo-100 px-10 py-5 rounded-2xl font-extrabold text-lg hover:border-indigo-500 transition-all">Eksplorasi Warna</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 relative">
+                <!-- Main Initial Image -->
+                <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-pastel-blue rounded-full blur-[120px] opacity-60"></div>
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1200&auto=format&fit=crop" 
+                     alt="Interior Mewah Garestha Good Gorden" 
+                     class="rounded-[4rem] shadow-2xl border-[15px] border-white w-full h-[600px] object-cover floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu 1: 10 Pilihan Warna & Motif -->
+    <section id="koleksi" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-serif">10 Koleksi Warna & Motif</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Dari warna polos yang menenangkan hingga motif geometri yang artistik.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8">
+                <!-- Warna 1: Polos Putih -->
+                <div class="card-shadow bg-slate-50 p-3 rounded-[3rem]">
+                    <div class="aspect-[3/4] rounded-[2.5rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7eaa511?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover" alt="Putih Salju Polos">
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="font-bold text-slate-700">Snow White</p>
+                        <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Polos Elegan</span>
+                    </div>
+                </div>
+                <!-- Warna 2: Polos Abu -->
+                <div class="card-shadow bg-slate-50 p-3 rounded-[3rem]">
+                    <div class="aspect-[3/4] rounded-[2.5rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover" alt="Abu Minimalis">
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="font-bold text-slate-700">Charcoal Grey</p>
+                        <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Polos Elegan</span>
+                    </div>
+                </div>
+                <!-- Warna 3: Floral Pink -->
+                <div class="card-shadow bg-slate-50 p-3 rounded-[3rem]">
+                    <div class="aspect-[3/4] rounded-[2.5rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1520108110173-08240f73003c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover" alt="Motif Bunga Pink">
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="font-bold text-slate-700">Cherry Blossom</p>
+                        <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Motif Floral</span>
+                    </div>
+                </div>
+                <!-- Warna 4: Floral Hijau -->
+                <div class="card-shadow bg-slate-50 p-3 rounded-[3rem]">
+                    <div class="aspect-[3/4] rounded-[2.5rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1621619856624-42fd193a0661?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover" alt="Motif Daun Tropis">
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="font-bold text-slate-700">Tropical Leaf</p>
+                        <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Motif Floral</span>
+                    </div>
+                </div>
+                <!-- Warna 5: Geometri Biru -->
+                <div class="card-shadow bg-slate-50 p-3 rounded-[3rem]">
+                    <div class="aspect-[3/4] rounded-[2.5rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540323387799-d4122d9c070f?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover" alt="Geometri Biru">
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="font-bold text-slate-700">Navy Geometric</p>
+                        <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Bentuk Geometri</span>
+                    </div>
+                </div>
+                <!-- Warna 6: Geometri Emas -->
+                <div class="card-shadow bg-slate-50 p-3 rounded-[3rem]">
+                    <div class="aspect-[3/4] rounded-[2.5rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover" alt="Motif Emas">
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="font-bold text-slate-700">Golden Rhombus</p>
+                        <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Bentuk Geometri</span>
+                    </div>
+                </div>
+                <!-- Warna 7: Pastel Kuning -->
+                <div class="card-shadow bg-slate-50 p-3 rounded-[3rem]">
+                    <div class="aspect-[3/4] rounded-[2.5rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1554188248-986adbb73be4?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover" alt="Kuning Pastel">
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="font-bold text-slate-700">Lemon Sorbet</p>
+                        <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Warna Pastel</span>
+                    </div>
+                </div>
+                <!-- Warna 8: Pastel Ungu -->
+                <div class="card-shadow bg-slate-50 p-3 rounded-[3rem]">
+                    <div class="aspect-[3/4] rounded-[2.5rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover" alt="Ungu Pastel">
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="font-bold text-slate-700">Lavender Mist</p>
+                        <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Warna Pastel</span>
+                    </div>
+                </div>
+                <!-- Warna 9: Earth Tone Brown -->
+                <div class="card-shadow bg-slate-50 p-3 rounded-[3rem]">
+                    <div class="aspect-[3/4] rounded-[2.5rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579656335377-333d40ec4693?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover" alt="Cokelat Tanah">
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="font-bold text-slate-700">Terracotta Polos</p>
+                        <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Earth Tone</span>
+                    </div>
+                </div>
+                <!-- Warna 10: Sage Green -->
+                <div class="card-shadow bg-slate-50 p-3 rounded-[3rem]">
+                    <div class="aspect-[3/4] rounded-[2.5rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1620311316613-259df95b1285?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover" alt="Hijau Sage">
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="font-bold text-slate-700">Sage Serenity</p>
+                        <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Earth Tone</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu 2 & 3: Ukuran & Jenis Kain -->
+    <section id="kain" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" alt="Jenis Kain Gorden" class="rounded-[4rem] shadow-2xl relative z-10">
+                    <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-pastel-yellow rounded-full -z-0 blur-3xl opacity-50"></div>
+                </div>
+                <div class="order-1 lg:order-2 space-y-10">
+                    <h2 class="text-4xl md:text-5xl font-serif">Kain Premium & Ukuran Custom</h2>
+                    
+                    <div class="space-y-6">
+                        <!-- Jenis Kain List -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-6 rounded-[2rem] shadow-sm border border-slate-100 flex items-center gap-4">
+                                <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-2xl">🧶</div>
+                                <div><h4 class="font-bold">Nilon</h4><p class="text-xs text-slate-400">Ringan & Kuat</p></div>
+                            </div>
+                            <div class="bg-white p-6 rounded-[2rem] shadow-sm border border-slate-100 flex items-center gap-4">
+                                <div class="w-14 h-14 bg-pink-50 rounded-2xl flex items-center justify-center text-2xl">☁️</div>
+                                <div><h4 class="font-bold">Katun</h4><p class="text-xs text-slate-400">Lembut & Sejuk</p></div>
+                            </div>
+                            <div class="bg-white p-6 rounded-[2rem] shadow-sm border border-slate-100 flex items-center gap-4">
+                                <div class="w-14 h-14 bg-yellow-50 rounded-2xl flex items-center justify-center text-2xl">✨</div>
+                                <div><h4 class="font-bold">Sutra</h4><p class="text-xs text-slate-400">Mewah Berkilau</p></div>
+                            </div>
+                            <div class="bg-white p-6 rounded-[2rem] shadow-sm border border-slate-100 flex items-center gap-4">
+                                <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-2xl">🛡️</div>
+                                <div><h4 class="font-bold">Polyester</h4><p class="text-xs text-slate-400">Anti Kusut</p></div>
+                            </div>
+                        </div>
+
+                        <!-- Ukuran Slider Info -->
+                        <div class="bg-white p-10 rounded-[3rem] shadow-xl border-t-4 border-indigo-400">
+                            <h4 class="text-xl font-bold mb-4">Pilihan Ukuran Luas</h4>
+                            <p class="text-slate-500 mb-6">Kami melayani pembuatan gorden dari ukuran terkecil hingga jendela gedung tinggi.</p>
+                            <div class="relative pt-6 pb-2">
+                                <div class="h-4 bg-slate-100 rounded-full w-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-pink-400 to-indigo-500 w-[70%]"></div>
+                                </div>
+                                <div class="flex justify-between mt-4 font-bold text-slate-400 text-sm italic">
+                                    <span>1 Meter</span>
+                                    <span>5 Meter</span>
+                                    <span>10 Meter</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu 4: Pengoperasian -->
+    <section id="sistem" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-serif">Sistem Pengoperasian</h2>
+                <p class="text-slate-400">Teknologi tinggi atau keindahan klasik manual.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Digital -->
+                <div class="group relative overflow-hidden rounded-[4rem] shadow-2xl h-[450px]">
+                    <img src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=800&auto=format&fit=crop" alt="Gorden Sistem Digital" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/90 via-indigo-900/20 to-transparent flex flex-col justify-end p-12 text-white">
+                        <span class="bg-indigo-500 text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-full w-fit mb-4">Futuristik</span>
+                        <h3 class="text-3xl font-bold mb-2">Smart Digital System</h3>
+                        <p class="text-indigo-100 opacity-80">Kontrol melalui smartphone atau remote control. Atur cahaya tanpa beranjak dari sofa.</p>
+                    </div>
+                </div>
+                <!-- Manual -->
+                <div class="group relative overflow-hidden rounded-[4rem] shadow-2xl h-[450px]">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop" alt="Gorden Sistem Manual" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-pink-900/90 via-pink-900/20 to-transparent flex flex-col justify-end p-12 text-white">
+                        <span class="bg-pink-500 text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-full w-fit mb-4">Klasik Elegan</span>
+                        <h3 class="text-3xl font-bold mb-2">Classic Manual System</h3>
+                        <p class="text-pink-100 opacity-80">Tarikan yang halus dan awet puluhan tahun. Keindahan yang tidak membutuhkan daya listrik.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section: 5 Opsi Harga -->
+    <section id="harga" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-serif">Opsi Paket Harga</h2>
+                <p class="text-slate-400">Pilihan cerdas untuk keindahan hunian Anda.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Harga 1: Basic -->
+                <div class="bg-white p-8 rounded-[3rem] border border-slate-100 flex flex-col justify-between hover:shadow-2xl transition group">
+                    <div>
+                        <div class="w-12 h-12 bg-pastel-blue rounded-2xl flex items-center justify-center text-xl mb-6">🏠</div>
+                        <h4 class="text-xl font-bold mb-2">Basic Comfort</h4>
+                        <div class="text-3xl font-extrabold text-slate-800 mb-6 italic">Rp 450rb</div>
+                        <ul class="space-y-3 text-xs text-slate-500">
+                            <li>• Ukuran 1-2 Meter</li>
+                            <li>• Kain Nilon/Polyester</li>
+                            <li>• Warna Polos</li>
+                            <li>• Sistem Manual</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6282337931876" class="mt-8 block text-center py-4 bg-slate-50 text-slate-700 rounded-2xl font-bold group-hover:bg-indigo-600 group-hover:text-white transition">Pesan Paket</a>
+                </div>
+
+                <!-- Harga 2: Standard -->
+                <div class="bg-white p-8 rounded-[3rem] border border-slate-100 flex flex-col justify-between hover:shadow-2xl transition group">
+                    <div>
+                        <div class="w-12 h-12 bg-pastel-green rounded-2xl flex items-center justify-center text-xl mb-6">🌿</div>
+                        <h4 class="text-xl font-bold mb-2">Natural Vibe</h4>
+                        <div class="text-3xl font-extrabold text-slate-800 mb-6 italic">Rp 850rb</div>
+                        <ul class="space-y-3 text-xs text-slate-500">
+                            <li>• Ukuran 3 Meter</li>
+                            <li>• Kain Katun Lembut</li>
+                            <li>• Motif Floral Tropis</li>
+                            <li>• Sistem Manual</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6282337931876" class="mt-8 block text-center py-4 bg-slate-50 text-slate-700 rounded-2xl font-bold group-hover:bg-indigo-600 group-hover:text-white transition">Pesan Paket</a>
+                </div>
+
+                <!-- Harga 3: Best Seller (Premium) -->
+                <div class="bg-indigo-600 p-8 rounded-[3.5rem] flex flex-col justify-between shadow-2xl scale-110 z-10 text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full translate-x-10 -translate-y-10"></div>
+                    <div>
+                        <div class="bg-white/20 text-[10px] font-bold uppercase px-3 py-1 rounded-full w-fit mb-6">Most Popular</div>
+                        <h4 class="text-2xl font-bold mb-2">Luxury Suite</h4>
+                        <div class="text-4xl font-extrabold mb-6 italic">Rp 1.8jt</div>
+                        <ul class="space-y-3 text-sm text-indigo-100 mb-8">
+                            <li>✓ Ukuran s/d 5 Meter</li>
+                            <li>✓ Kain Sutra Mewah</li>
+                            <li>✓ Motif Geometri Emas</li>
+                            <li>✓ Sistem Digital + Manual</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6282337931876" class="block text-center py-5 bg-white text-indigo-600 rounded-2xl font-bold shadow-lg hover:bg-pink-100 transition">Pesan Sekarang</a>
+                </div>
+
+                <!-- Harga 4: Digital Smart -->
+                <div class="bg-white p-8 rounded-[3rem] border border-slate-100 flex flex-col justify-between hover:shadow-2xl transition group">
+                    <div>
+                        <div class="w-12 h-12 bg-pastel-pink rounded-2xl flex items-center justify-center text-xl mb-6">📱</div>
+                        <h4 class="text-xl font-bold mb-2">Smart Living</h4>
+                        <div class="text-3xl font-extrabold text-slate-800 mb-6 italic">Rp 3.2jt</div>
+                        <ul class="space-y-3 text-xs text-slate-500">
+                            <li>• Ukuran s/d 7 Meter</li>
+                            <li>• Kain Polyester Grade A</li>
+                            <li>• Custom Full Motif</li>
+                            <li>• Full Digital Remote</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6282337931876" class="mt-8 block text-center py-4 bg-slate-50 text-slate-700 rounded-2xl font-bold group-hover:bg-indigo-600 group-hover:text-white transition">Pesan Paket</a>
+                </div>
+
+                <!-- Harga 5: VVIP Custom -->
+                <div class="bg-slate-900 p-8 rounded-[3rem] border border-slate-800 flex flex-col justify-between text-white hover:shadow-2xl transition group">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-400 rounded-2xl flex items-center justify-center text-xl mb-6">👑</div>
+                        <h4 class="text-xl font-bold mb-2">Royal Mansion</h4>
+                        <div class="text-3xl font-extrabold text-amber-400 mb-6 italic">Rp 6.5jt+</div>
+                        <ul class="space-y-3 text-xs text-slate-400">
+                            <li>• Ukuran s/d 10 Meter</li>
+                            <li>• Kain Sutra Impor</li>
+                            <li>• Desain Motif Eksklusif</li>
+                            <li>• Smart Home Integrated</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6282337931876" class="mt-8 block text-center py-4 bg-amber-500 text-slate-900 rounded-2xl font-bold group-hover:bg-amber-400 transition">Konsultasi VVIP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="py-24 px-6 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-[4rem] p-12 md:p-24 text-center text-white shadow-2xl relative overflow-hidden">
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-pink-400/20 rounded-full blur-[100px] translate-x-20 translate-y-20"></div>
+            <h2 class="text-4xl md:text-6xl font-serif mb-8 leading-tight">Rumah Menawan <br> Berawal dari Jendela</h2>
+            <p class="text-indigo-100 text-xl mb-12 max-w-2xl mx-auto">Marketing ahli kami siap membantu Anda memilih gorden terbaik yang memanjakan mata.</p>
+            
+            <div class="flex flex-col items-center gap-6">
+                <a href="https://wa.me/6282337931876" class="inline-flex items-center gap-4 bg-white text-indigo-700 px-12 py-6 rounded-3xl text-2xl font-extrabold hover:scale-105 transition-all shadow-xl group">
+                    <svg class="w-8 h-8 fill-green-500" viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.994 9.994 0 004.773 1.217h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.037-5.176-2.922-7.062A9.935 9.935 0 0012.012 2z"/></svg>
+                    <span>Hubungi: 082337931876</span>
+                </a>
+                <p class="text-indigo-200 text-sm italic">Tersedia layanan konsultasi dan pemasangan gratis untuk area tertentu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center text-slate-300 text-xs border-t border-slate-50">
+        <p>© 2026 <span class="font-bold text-pink-400">Garestha Good Gorden</span>. Semua gambar memiliki hak cipta estetika.</p>
+    </footer>
+
+</body>
+</html>
